@@ -1,0 +1,30 @@
+{
+  "name": "railway-booking-system",
+  "version": "1.0.0",
+  "description": "Railway Booking System and Algorithm designed in Node and React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kashif-raza2019/Railway-Booking-System.git"
+  },
+  "keywords": [
+    "Railway",
+    "Booking",
+    "System",
+    "and",
+    "Algorithm"
+  ],
+  "author": "Kashif Raza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kashif-raza2019/Railway-Booking-System/issues"
+  },
+  "homepage": "https://github.com/kashif-raza2019/Railway-Booking-System#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
