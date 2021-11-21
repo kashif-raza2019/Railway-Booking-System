@@ -1,6 +1,13 @@
+// Required Files
 const express = require('express');
+// Port Number
+const port = process.env.PORT || 3000;
 const app = express();
-const bodyParser = require('body-parser');
 
-const port = process.env.PORT || 3001;
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + '/index.html');
+});
+
+app.listen(port,function() {
+    console.log(`Listening on port ${port}`)
+    });
