@@ -36,10 +36,16 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <form action="/Book" method="post">
+                <form action="/train" method="post">
                     <div class="form-group">
                         <label for="train">Select Train</label>
-                        <input type="text" class="form-control" id="train"  name="train" placeholder="Start Typing Train No. or Name" autocomplete="off">
+                        <select name="train" id="train" class="form-control" required>
+                            <option value="" disabled selected>Select Train</option>
+                            <option value="12913">INDORE-NAGPUR Trishatabdi SF EXP</option>
+                            <option value="19317">PURI Hamsafar EXP</option>
+                            <option value="19301">INDORE-YESVANTPUR SF EXP</option>
+                            <option value="02692">HAZRAT NZM-KSR BANGLORE Rajdhani EXP</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="date">Date</label>
@@ -48,25 +54,26 @@
                     <div class="form-group">
                         <label for="class">Class</label>
                         <select class="form-control" id="class" name="class">
+                            <option value="" disabled selected>Select Class</option>
                             <option value="1A">1AC</option>
                             <option value="2A">2AC</option>
                             <option value="3A">3AC</option>
                             <option value="SL">SL</option>
-                            <option value="2S">2S</option>
                             <option value="CC">CC</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
+                    <br><br>
+                    <h5>NOTE: <i>These train routes and reservation style are for examples and dummy reservations therefore not related to that of IRCTC or any other platform and hence no facility to choose from source to destination except for the source and destin. of train itself are provided.</i></h5>
                 </form>
             </div>
         </div>
-        <nav class="navbar fixed-bottom navbar-light bg-light">
-           <p class="textCenter">&copy; Code 2021 Kashif Raza <a class="navbar-brand" href="https://www.kashifraza.tech/">kashifraza.tech</a></p> 
-          </nav>
+        <nav class="navbar fixed-bottom navbar-light bg-light" style="text-align: center;">
+           <p class="textCenter">&copy; Code 2021 Kashif Raza <a class="navbar-brand" href="https://www.kashifraza.tech/"> &lt; kashifraza.tech /&gt;</a></p> 
+        </nav>
 
     <!-- Bootstrap v4.5 CDN -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="js/user.js"></script>
 </body>
 </html>
